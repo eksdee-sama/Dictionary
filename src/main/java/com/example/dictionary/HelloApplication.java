@@ -84,14 +84,15 @@ public class HelloApplication extends Application {
         });
 
         suggestedWordList=new ListView<>();
-        suggestedWordList.setTranslateY(yLine+70);
+        suggestedWordList.setTranslateY(yLine+65);
         String[] suggestedList={"Sampat","Eksdee"};
         suggestedWordList.getItems().addAll(suggestedList);
         suggestedWordList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 String selectedWord=suggestedWordList.getSelectionModel().getSelectedItem();
-                meaningLabel.setText(selectedWord);
+                ;
+                meaningLabel.setText(dictionaryUsingHashMap.findMeaning(selectedWord));
             }
         });
 

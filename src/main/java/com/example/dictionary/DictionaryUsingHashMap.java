@@ -46,5 +46,7 @@ public class DictionaryUsingHashMap {
     {
         addWord("Love","Pain");
         addWord("Life","Zhand");
+        addWord("Redeem","Claim");
+        addWord("Fisherman","One who catches fish");
     }
 }
